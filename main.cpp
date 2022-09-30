@@ -49,6 +49,25 @@ int main() {
     int numbers[2][3] = {1, 2, 3, 10, 11, 12};
     cout << findMDAvg(numbers, 2, 3) << endl;
 
+    // Create pointer
+    int* ptr1 = &a;
+    cout << "&a: " << &a << endl;
+    cout << "ptr1: " << ptr1 << endl;
+    cout << "*ptr1 a: " << *ptr1 << endl;
+    cout << "*&a: " << *&a << endl;
+
+    cout << "\nAddress of values: " << &values << endl;
+    for (int i = 0; i < 4; ++i) {
+        cout << "Address of values[" << i << "]: " << &values[i] << endl;
+    }
+
+    cout << "\nAddress of values: " << &values << endl;
+    cout << "values + 1: " << values+1 << endl;
+
+
+    cout << "\nAddress of double b: " << &b << endl;
+    cout << "Address of double b+1: " << &b+1 << endl;
+
 }
 
 int findAvg(int* data, int size){
